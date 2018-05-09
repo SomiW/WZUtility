@@ -24,6 +24,7 @@
 		352E575520A13A51008F5753 /* NSString+JKNormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E574C20A13A50008F5753 /* NSString+JKNormalRegex.m */; };
 		352E575D20A1894E008F5753 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E575920A1894D008F5753 /* NSObject+YYModel.m */; };
 		352E575E20A1894E008F5753 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E575B20A1894D008F5753 /* YYClassInfo.m */; };
+		352E576420A2A211008F5753 /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E576220A2A211008F5753 /* NSObject+YYAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,9 @@
 		352E575A20A1894D008F5753 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		352E575B20A1894D008F5753 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		352E575C20A1894D008F5753 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		352E576220A2A211008F5753 /* NSObject+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYAdd.m"; sourceTree = "<group>"; };
+		352E576320A2A211008F5753 /* NSObject+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYAdd.h"; sourceTree = "<group>"; };
+		352E576520A2A228008F5753 /* YYKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,9 @@
 			children = (
 				352E575C20A1894D008F5753 /* NSObject+YYModel.h */,
 				352E575920A1894D008F5753 /* NSObject+YYModel.m */,
+				352E576320A2A211008F5753 /* NSObject+YYAdd.h */,
+				352E576220A2A211008F5753 /* NSObject+YYAdd.m */,
+				352E576520A2A228008F5753 /* YYKitMacro.h */,
 				352E575A20A1894D008F5753 /* YYClassInfo.h */,
 				352E575B20A1894D008F5753 /* YYClassInfo.m */,
 				352E574820A13A50008F5753 /* NSObject+JKEasyCopy.h */,
@@ -216,6 +223,7 @@
 				352E575120A13A51008F5753 /* NSObject+JKRuntime.m in Sources */,
 				352E56E8209FE340008F5753 /* ViewController.m in Sources */,
 				352E573920A13880008F5753 /* Person.m in Sources */,
+				352E576420A2A211008F5753 /* NSObject+YYAdd.m in Sources */,
 				352E575520A13A51008F5753 /* NSString+JKNormalRegex.m in Sources */,
 				352E56F3209FE341008F5753 /* main.m in Sources */,
 				352E56E5209FE340008F5753 /* AppDelegate.m in Sources */,

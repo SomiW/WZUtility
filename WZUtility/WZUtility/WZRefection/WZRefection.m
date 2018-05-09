@@ -71,7 +71,8 @@
     [inv setSelector:sel];
     if ([WZRefection setInv:inv withSig:sig andArgs:parameters]) {
         [inv invoke];
-        return [WZRefection getReturnFromInv:inv withSig:sig];
+        id obj = [WZRefection getReturnFromInv:inv withSig:sig];
+        return obj;
     }else {
         NSLog(@"参数非法");
         return nil;
@@ -150,7 +151,7 @@ return @(ret); \
         };
             
         case '@': { // id
-            id ret = nil;
+            __unsafe_unretained id ret = nil;
             [inv getReturnValue:&ret];
             return ret;
         };

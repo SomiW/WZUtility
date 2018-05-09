@@ -18,6 +18,7 @@
 
 + (CGFloat)sleepHour:(CGFloat)hours name:(NSString *)name;
 
+
 @end
 
 typedef NS_ENUM(NSInteger, ParentType)  {
@@ -33,10 +34,15 @@ typedef NS_ENUM(NSInteger, ParentType)  {
 @property (nonatomic, assign) BOOL hasChild;
 @property (nonatomic, strong) NSArray <Child *>*childrens;
 
++ (Child *)giveBirthToChild:(CGSize)size;
+
++ (CGFloat)giveHeight:(CGFloat)height;
+
 @end
 
 @interface Child : Person
 
 @property (nonatomic, copy) NSString *shcoolName;
+@property (nonatomic) CGSize size;
 
 @end

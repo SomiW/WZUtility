@@ -24,6 +24,17 @@
 
 @implementation Parent
 
+
++ (Child *)giveBirthToChild:(CGSize)size {
+    Child *child = [[Child alloc]init];
+    child.name = @"xiaoming";
+    child.size = CGSizeMake(size.width, size.height);
+    return child;
+}
+
++ (CGFloat)giveHeight:(CGFloat)height {
+    return height + 1;
+}
 @end
 
 

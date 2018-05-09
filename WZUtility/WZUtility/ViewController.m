@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "WZRefection.h"
+#import "Person.h"
+#import "NSObject+YYAdd.h"
 
 @interface ViewController ()
 
@@ -21,9 +23,21 @@
     
 //    NSLog(@"%@",[WZRefection objectPropertiesWithClass:NSClassFromString(@"Parent")]);
 //    NSLog(@"%@",[WZRefection objectPropertiesWithClass:NSClassFromString(@"Child")]);
-    NSLog(@"%@",[WZRefection executeClassMethod:@"Person" method:@"sleepHour:name:" parameters:@[@(19.9982),@"wang"]]);
-    [WZRefection executeClassMethod:@"Person" method:@"eat" parameters:@[]];
+//    NSLog(@"%@",[WZRefection executeClassMethod:@"Person" method:@"sleepHour:name:" parameters:@[@(19.9982),@"wang"]]);
+//    [WZRefection executeClassMethod:@"Person" method:@"eat" parameters:@[]];
+
+    //NSLog(@"%@, %@",child.name,NSStringFromCGSize(child.size));
+    [self test];
     
+}
+
+- (void)test {
+    Child *child = [WZRefection executeClassMethod:@"Parent" method:@"giveBirthToChild:" parameters:@[@(CGSizeMake(200, 300))]];
+    NSLog(@"%@",NSStringFromCGSize(child.size));
+    
+    CGFloat height = [[WZRefection executeClassMethod:@"Parent" method:@"giveHeight:" parameters:@[@(1297.9331)]] floatValue];
+
+    NSLog(@"%lf",height);
 }
 
 

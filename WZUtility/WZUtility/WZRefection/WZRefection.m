@@ -46,64 +46,6 @@
     return propertyNames;
 }
 
-/**
- *  @brief: 根据类的属性名取属性对象
- *  @param objClass 类
- *  @param zPropertyName 属性名称(C字符串)
- *  @return: 返回一个 WZObjectProperty 对象实例
- */
-+ (WZObjectProperty *)propertyWithClass:(Class)objClass zPropertyName:(const char *)zPropertyName {
-    WZObjectProperty *objectProperty = [[WZObjectProperty alloc]init];
-    while (objClass != [NSObject class]) {
-        unsigned int propertyCount = 0;
-        objc_property_t * properties = class_copyPropertyList(objClass, &propertyCount);
-        for (unsigned int i = 0; i < propertyCount; ++i) {
-            objc_property_t property = properties[i];
-            const char * name = property_getName(property);
-            if (strcmp(name, zPropertyName) == 0) {
-                
-                
-                free(properties);
-                break;
-            }
-        }
-        free(properties);
-        objClass = class_getSuperclass(objClass);
-    };
-    return objectProperty;
-}
-
-/**
- *  @brief: 根据属性名称集合返回属性对象集合
- *  @param objClass 类
- *  @param classNames 属性数组
- */
-+ (NSArray *)objectPropertiesWithClass:(Class)objClass propertyNames:(NSArray *)propertyNames {
-    return nil;
-}
-
-/**
- *  @brief: 通过WZObjectProperty数组，返回属性名称数组
- *  @param objectProperties:WZObjectProperty 对象数组
- *  @return: 返回属性
- */
-+ (NSArray *)propertyNamesFromObjectProperties:(NSArray *)objectProperties {
-    return @[];
-}
-
-
-
-/*
- @brief:通过类型和属性名，取得属性的类型字符串
- @param objClass:定义的类
- @param propertyName:属性名称C字符串
- @return:返回属性类型的C字符串,需要释放
- */
-+ (const char *)copyPropertyTypeWithClass:(Class)objcClass propertyName:(const char *)propertyName{
-    return 'C';
-}
-
-
 /*
  *  @brief:执行给定的类的类方法
  *  @param className:类的字符串定义

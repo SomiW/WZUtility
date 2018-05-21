@@ -30,6 +30,7 @@
 		35F06FC220AA849200C94D8F /* NSInvocation+JKBb.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06FBF20AA849200C94D8F /* NSInvocation+JKBb.m */; };
 		35F06FC320AA849200C94D8F /* NSInvocation+JKBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06FC120AA849200C94D8F /* NSInvocation+JKBlock.m */; };
 		35F06FD120ABD4B700C94D8F /* WZObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06FD020ABD4B700C94D8F /* WZObjectBuilder.m */; };
+		35F06FEC20B2A23900C94D8F /* NSString+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06FEB20B2A23900C94D8F /* NSString+WZAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		35F06FC120AA849200C94D8F /* NSInvocation+JKBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+JKBlock.m"; sourceTree = "<group>"; };
 		35F06FCF20ABD4B700C94D8F /* WZObjectBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZObjectBuilder.h; sourceTree = "<group>"; };
 		35F06FD020ABD4B700C94D8F /* WZObjectBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZObjectBuilder.m; sourceTree = "<group>"; };
+		35F06FEA20B2A23900C94D8F /* NSString+WZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WZAdd.h"; sourceTree = "<group>"; };
+		35F06FEB20B2A23900C94D8F /* NSString+WZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WZAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +116,7 @@
 			children = (
 				35F06FBD20AA849200C94D8F /* NSInvocation */,
 				3581F7D820A2D7DE00AB10A2 /* Tool */,
-				3581F7CE20A2D58A00AB10A2 /* WZUIHelper */,
 				352E573A20A13A37008F5753 /* Learn */,
-				352E573320A13555008F5753 /* WZRefection */,
 				352E56E3209FE340008F5753 /* AppDelegate.h */,
 				352E56E4209FE340008F5753 /* AppDelegate.m */,
 				352E573720A13880008F5753 /* Person.h */,
@@ -168,18 +169,20 @@
 			path = Learn;
 			sourceTree = "<group>";
 		};
-		3581F7CE20A2D58A00AB10A2 /* WZUIHelper */ = {
+		3581F7CE20A2D58A00AB10A2 /* UIHelper */ = {
 			isa = PBXGroup;
 			children = (
 				3581F7D220A2D5D700AB10A2 /* WZUIHelper.h */,
 				3581F7D320A2D5D700AB10A2 /* WZUIHelper.m */,
 			);
-			path = WZUIHelper;
+			path = UIHelper;
 			sourceTree = "<group>";
 		};
 		3581F7D820A2D7DE00AB10A2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				352E573320A13555008F5753 /* WZRefection */,
+				3581F7CE20A2D58A00AB10A2 /* UIHelper */,
 				35F06FE920B29F8A00C94D8F /* Category */,
 				3581F7D920A2D7F800AB10A2 /* WZTools.h */,
 				35F06FCF20ABD4B700C94D8F /* WZObjectBuilder.h */,
@@ -204,6 +207,8 @@
 			children = (
 				35F06FB720AA808A00C94D8F /* NSDate+WZAdd.h */,
 				35F06FB820AA808A00C94D8F /* NSDate+WZAdd.m */,
+				35F06FEA20B2A23900C94D8F /* NSString+WZAdd.h */,
+				35F06FEB20B2A23900C94D8F /* NSString+WZAdd.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				352E575D20A1894E008F5753 /* NSObject+YYModel.m in Sources */,
 				352E574D20A13A51008F5753 /* NSObject+JKReflection.m in Sources */,
 				352E574F20A13A51008F5753 /* NSString+JKContains.m in Sources */,
+				35F06FEC20B2A23900C94D8F /* NSString+WZAdd.m in Sources */,
 				352E575320A13A51008F5753 /* NSString+JKUUID.m in Sources */,
 				352E575E20A1894E008F5753 /* YYClassInfo.m in Sources */,
 				352E575420A13A51008F5753 /* NSString+JKSize.m in Sources */,

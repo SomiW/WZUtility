@@ -327,4 +327,48 @@ return @(ret); \
     
 }
 
++ (id)executeInstanceMethod:(NSObject *)object
+                     method:(NSString *)method
+                 parameters:(NSArray *)parameters {
+    if (!method) {
+        return nil;
+    }
+    SEL sel = NSSelectorFromString(method);
+    if (![object respondsToSelector:sel]) {
+        return nil;
+    }
+    NSMethodSignature *sig = [object methodSignatureForSelector:sel];
+    
+    if (!sig) { [self doesNotRecognizeSelector:sel]; return nil; }
+    __block NSInvocation *inv = [NSInvocation invocationWithMethodSignature:sig];
+    if (!inv) { [self doesNotRecognizeSelector:sel]; return nil; }
+    [inv setTarget:object];
+    [inv setSelector:sel];
+    if ([WZRefection setInv:inv withSig:sig andArgs:parameters]) {
+        [inv invoke];
+        id obj = [WZRefection getReturnFromInv:inv withSig:sig];
+        return obj;
+    }else {
+        NSLog(@"参数非法");
+        return nil;
+    }
+}
+
++ (id)objectWithClassName:(NSString *)className
+               initMethod:(NSString *)initMethod
+           initParameters:(NSArray *)initParameters
+                 subClass:(Class)subClass {
+    if (!className || className.length == 0) {
+        return nil;
+    }
+    if (!initMethod || initMethod.length == 0) {
+        initMethod = @"init";
+    }
+    id instance = [NSClassFromString(className) alloc];
+    if ([instance isKindOfClass:subClass]) {
+        return [[self class] executeInstanceMethod:instance method:initMethod parameters:initParameters];
+    }else
+        return nil;
+}
+
 @end

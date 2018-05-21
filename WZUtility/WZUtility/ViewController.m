@@ -32,12 +32,18 @@
 }
 
 - (void)test {
-    Child *child = [WZRefection executeClassMethod:@"Parent" method:@"giveBirthToChild:" parameters:@[@(CGSizeMake(200, 300))]];
-    NSLog(@"%@",NSStringFromCGSize(child.size));
+//    Child *child = [WZRefection executeClassMethod:@"Parent" method:@"giveBirthToChild:" parameters:@[@(CGSizeMake(200, 300))]];
+//    NSLog(@"%@",NSStringFromCGSize(child.size));
+//
+//    CGFloat height = [[WZRefection executeClassMethod:@"Parent" method:@"giveHeight:" parameters:@[@(1297.9331)]] floatValue];
+//
+//    NSLog(@"%lf",height);
     
-    CGFloat height = [[WZRefection executeClassMethod:@"Parent" method:@"giveHeight:" parameters:@[@(1297.9331)]] floatValue];
-
-    NSLog(@"%lf",height);
+    Person *person = [Person alloc];
+ 
+   [WZRefection executeInstanceMethod:person method:@"initWithAge:name:" parameters:@[@(19),@"wangzhen"]];
+    NSLog(@"%@   ==   %ld",person.name,person.age);
+    
 }
 
 

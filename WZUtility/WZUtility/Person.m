@@ -10,6 +10,22 @@
 
 @implementation Person
 
+
+
+- (CGFloat)go {
+    NSLog(@"go");
+    return self.age;
+}
+
+- (instancetype)initWithAge:(CGFloat)age name:(NSString *)name {
+    self = [super init];
+    if (self) {
+        _age = age;
+        _name = name;
+    }
+    return self;
+}
+
 + (void)eat {
     NSLog(@"eat");
 }

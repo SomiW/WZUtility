@@ -38,6 +38,10 @@ typedef NS_ENUM(NSInteger, ParentType)  {
 
 + (CGFloat)giveHeight:(CGFloat)height;
 
+- (CGFloat)go;
+
+- (instancetype)initWithAge:(CGFloat)age name:(NSString *)name;
+
 @end
 
 @interface Child : Person

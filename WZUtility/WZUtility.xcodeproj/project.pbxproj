@@ -31,6 +31,10 @@
 		35F06FC320AA849200C94D8F /* NSInvocation+JKBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06FC120AA849200C94D8F /* NSInvocation+JKBlock.m */; };
 		35F06FD120ABD4B700C94D8F /* WZObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06FD020ABD4B700C94D8F /* WZObjectBuilder.m */; };
 		35F06FEC20B2A23900C94D8F /* NSString+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F06FEB20B2A23900C94D8F /* NSString+WZAdd.m */; };
+		35F0705620B5165600C94D8F /* WZDeviceUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0705520B5165600C94D8F /* WZDeviceUtility.m */; };
+		35F0705920B5173D00C94D8F /* UIColor+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0705820B5173D00C94D8F /* UIColor+WZAdd.m */; };
+		35F0705F20B56E7900C94D8F /* UIView+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0705E20B56E7900C94D8F /* UIView+WZAdd.m */; };
+		35F0706220B56FDB00C94D8F /* NSCalendar+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0706120B56FDB00C94D8F /* NSCalendar+WZAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +86,14 @@
 		35F06FD020ABD4B700C94D8F /* WZObjectBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZObjectBuilder.m; sourceTree = "<group>"; };
 		35F06FEA20B2A23900C94D8F /* NSString+WZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WZAdd.h"; sourceTree = "<group>"; };
 		35F06FEB20B2A23900C94D8F /* NSString+WZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WZAdd.m"; sourceTree = "<group>"; };
+		35F0705420B5165600C94D8F /* WZDeviceUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZDeviceUtility.h; sourceTree = "<group>"; };
+		35F0705520B5165600C94D8F /* WZDeviceUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZDeviceUtility.m; sourceTree = "<group>"; };
+		35F0705720B5173D00C94D8F /* UIColor+WZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+WZAdd.h"; sourceTree = "<group>"; };
+		35F0705820B5173D00C94D8F /* UIColor+WZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WZAdd.m"; sourceTree = "<group>"; };
+		35F0705D20B56E7900C94D8F /* UIView+WZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WZAdd.h"; sourceTree = "<group>"; };
+		35F0705E20B56E7900C94D8F /* UIView+WZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZAdd.m"; sourceTree = "<group>"; };
+		35F0706020B56FDB00C94D8F /* NSCalendar+WZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+WZAdd.h"; sourceTree = "<group>"; };
+		35F0706120B56FDB00C94D8F /* NSCalendar+WZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+WZAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +126,8 @@
 		352E56E2209FE340008F5753 /* WZUtility */ = {
 			isa = PBXGroup;
 			children = (
-				35F06FBD20AA849200C94D8F /* NSInvocation */,
+				35F070EF20C8CE1C00C94D8F /* test */,
 				3581F7D820A2D7DE00AB10A2 /* Tool */,
-				352E573A20A13A37008F5753 /* Learn */,
 				352E56E3209FE340008F5753 /* AppDelegate.h */,
 				352E56E4209FE340008F5753 /* AppDelegate.m */,
 				352E573720A13880008F5753 /* Person.h */,
@@ -132,13 +143,13 @@
 			path = WZUtility;
 			sourceTree = "<group>";
 		};
-		352E573320A13555008F5753 /* WZRefection */ = {
+		352E573320A13555008F5753 /* Refection */ = {
 			isa = PBXGroup;
 			children = (
 				352E573420A135B7008F5753 /* WZRefection.h */,
 				352E573520A135B7008F5753 /* WZRefection.m */,
 			);
-			path = WZRefection;
+			path = Refection;
 			sourceTree = "<group>";
 		};
 		352E573A20A13A37008F5753 /* Learn */ = {
@@ -181,12 +192,14 @@
 		3581F7D820A2D7DE00AB10A2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				352E573320A13555008F5753 /* WZRefection */,
+				352E573320A13555008F5753 /* Refection */,
 				3581F7CE20A2D58A00AB10A2 /* UIHelper */,
 				35F06FE920B29F8A00C94D8F /* Category */,
 				3581F7D920A2D7F800AB10A2 /* WZTools.h */,
 				35F06FCF20ABD4B700C94D8F /* WZObjectBuilder.h */,
 				35F06FD020ABD4B700C94D8F /* WZObjectBuilder.m */,
+				35F0705420B5165600C94D8F /* WZDeviceUtility.h */,
+				35F0705520B5165600C94D8F /* WZDeviceUtility.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -209,8 +222,23 @@
 				35F06FB820AA808A00C94D8F /* NSDate+WZAdd.m */,
 				35F06FEA20B2A23900C94D8F /* NSString+WZAdd.h */,
 				35F06FEB20B2A23900C94D8F /* NSString+WZAdd.m */,
+				35F0705720B5173D00C94D8F /* UIColor+WZAdd.h */,
+				35F0705820B5173D00C94D8F /* UIColor+WZAdd.m */,
+				35F0705D20B56E7900C94D8F /* UIView+WZAdd.h */,
+				35F0705E20B56E7900C94D8F /* UIView+WZAdd.m */,
+				35F0706020B56FDB00C94D8F /* NSCalendar+WZAdd.h */,
+				35F0706120B56FDB00C94D8F /* NSCalendar+WZAdd.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		35F070EF20C8CE1C00C94D8F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				352E573A20A13A37008F5753 /* Learn */,
+				35F06FBD20AA849200C94D8F /* NSInvocation */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F0705920B5173D00C94D8F /* UIColor+WZAdd.m in Sources */,
 				352E573620A135B7008F5753 /* WZRefection.m in Sources */,
 				352E575120A13A51008F5753 /* NSObject+JKRuntime.m in Sources */,
 				3581F7D420A2D5D700AB10A2 /* WZUIHelper.m in Sources */,
@@ -291,12 +320,14 @@
 				35F06FC320AA849200C94D8F /* NSInvocation+JKBlock.m in Sources */,
 				352E576420A2A211008F5753 /* NSObject+YYAdd.m in Sources */,
 				35F06FD120ABD4B700C94D8F /* WZObjectBuilder.m in Sources */,
+				35F0706220B56FDB00C94D8F /* NSCalendar+WZAdd.m in Sources */,
 				352E575520A13A51008F5753 /* NSString+JKNormalRegex.m in Sources */,
 				35F06FB920AA808A00C94D8F /* NSDate+WZAdd.m in Sources */,
 				352E56F3209FE341008F5753 /* main.m in Sources */,
 				352E56E5209FE340008F5753 /* AppDelegate.m in Sources */,
 				352E575020A13A51008F5753 /* NSObject+JKEasyCopy.m in Sources */,
 				35F06FC220AA849200C94D8F /* NSInvocation+JKBb.m in Sources */,
+				35F0705F20B56E7900C94D8F /* UIView+WZAdd.m in Sources */,
 				352E575D20A1894E008F5753 /* NSObject+YYModel.m in Sources */,
 				352E574D20A13A51008F5753 /* NSObject+JKReflection.m in Sources */,
 				352E574F20A13A51008F5753 /* NSString+JKContains.m in Sources */,
@@ -304,6 +335,7 @@
 				352E575320A13A51008F5753 /* NSString+JKUUID.m in Sources */,
 				352E575E20A1894E008F5753 /* YYClassInfo.m in Sources */,
 				352E575420A13A51008F5753 /* NSString+JKSize.m in Sources */,
+				35F0705620B5165600C94D8F /* WZDeviceUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

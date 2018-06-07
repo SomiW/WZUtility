@@ -151,9 +151,9 @@ return @(ret); \
         };
             
         case '@': { // id
-            __unsafe_unretained id ret = nil;
+            void *ret;
             [inv getReturnValue:&ret];
-            return ret;
+            return (__bridge id)(ret);
         };
             
         case '#': { // Class

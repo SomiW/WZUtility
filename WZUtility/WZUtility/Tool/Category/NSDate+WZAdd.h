@@ -13,4 +13,9 @@
 //时间戳
 - (NSString *)timestamp;
 
+- (nullable NSDate *)dateByAddingYears:(NSInteger)years;
+- (nullable NSDate *)dateByAddingMonths:(NSInteger)months;
+- (nullable NSDate *)dateByAddingWeeks:(NSInteger)weeks;
+- (nullable NSDate *)dateByAddingDays:(NSInteger)days;
+
 @end

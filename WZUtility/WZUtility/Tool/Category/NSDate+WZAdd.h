@@ -18,4 +18,7 @@
 - (nullable NSDate *)dateByAddingWeeks:(NSInteger)weeks;
 - (nullable NSDate *)dateByAddingDays:(NSInteger)days;
 
+- (NSDate *)systemTimeZoneDate;
+- (NSDate *)dateForTimeZone:(NSTimeZone *)timeZone;
+
 @end

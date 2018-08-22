@@ -23,6 +23,7 @@
 		35F0705920B5173D00C94D8F /* UIColor+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0705820B5173D00C94D8F /* UIColor+WZAdd.m */; };
 		35F0705F20B56E7900C94D8F /* UIView+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0705E20B56E7900C94D8F /* UIView+WZAdd.m */; };
 		35F0706220B56FDB00C94D8F /* NSCalendar+WZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F0706120B56FDB00C94D8F /* NSCalendar+WZAdd.m */; };
+		B6276D77212D01B9006D5950 /* WZWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B6276D76212D01B9006D5950 /* WZWeakArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,8 @@
 		35F0705E20B56E7900C94D8F /* UIView+WZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZAdd.m"; sourceTree = "<group>"; };
 		35F0706020B56FDB00C94D8F /* NSCalendar+WZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+WZAdd.h"; sourceTree = "<group>"; };
 		35F0706120B56FDB00C94D8F /* NSCalendar+WZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+WZAdd.m"; sourceTree = "<group>"; };
+		B6276D75212D01B9006D5950 /* WZWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZWeakArray.h; sourceTree = "<group>"; };
+		B6276D76212D01B9006D5950 /* WZWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZWeakArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,14 +129,11 @@
 		3581F7D820A2D7DE00AB10A2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B6276D78212D01BD006D5950 /* Function */,
 				352E573320A13555008F5753 /* Refection */,
 				3581F7CE20A2D58A00AB10A2 /* UIHelper */,
 				35F06FE920B29F8A00C94D8F /* Category */,
 				3581F7D920A2D7F800AB10A2 /* WZTools.h */,
-				35F06FCF20ABD4B700C94D8F /* WZObjectBuilder.h */,
-				35F06FD020ABD4B700C94D8F /* WZObjectBuilder.m */,
-				35F0705420B5165600C94D8F /* WZDeviceUtility.h */,
-				35F0705520B5165600C94D8F /* WZDeviceUtility.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -153,6 +153,19 @@
 				35F0706120B56FDB00C94D8F /* NSCalendar+WZAdd.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		B6276D78212D01BD006D5950 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				35F06FCF20ABD4B700C94D8F /* WZObjectBuilder.h */,
+				35F06FD020ABD4B700C94D8F /* WZObjectBuilder.m */,
+				35F0705420B5165600C94D8F /* WZDeviceUtility.h */,
+				35F0705520B5165600C94D8F /* WZDeviceUtility.m */,
+				B6276D75212D01B9006D5950 /* WZWeakArray.h */,
+				B6276D76212D01B9006D5950 /* WZWeakArray.m */,
+			);
+			path = Function;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +246,7 @@
 				35F06FD120ABD4B700C94D8F /* WZObjectBuilder.m in Sources */,
 				35F0706220B56FDB00C94D8F /* NSCalendar+WZAdd.m in Sources */,
 				35F06FB920AA808A00C94D8F /* NSDate+WZAdd.m in Sources */,
+				B6276D77212D01B9006D5950 /* WZWeakArray.m in Sources */,
 				352E56F3209FE341008F5753 /* main.m in Sources */,
 				352E56E5209FE340008F5753 /* AppDelegate.m in Sources */,
 				35F0705F20B56E7900C94D8F /* UIView+WZAdd.m in Sources */,

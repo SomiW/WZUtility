@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "WZRefection.h"
 #import "Person.h"
-#import "NSObject+YYAdd.h"
 
 @interface ViewController ()
 

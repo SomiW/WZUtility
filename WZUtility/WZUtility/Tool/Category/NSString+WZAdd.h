@@ -45,4 +45,15 @@
  */
 + (NSString *)randomStringWithLength:(NSInteger)len String:(NSString *)letters;
 
+
+/**
+ *  URLEncode
+ */
+- (NSString *)URLEncodedString;
+
+/**
+ *  URLDecode
+ */
+-(NSString *)URLDecodedString;
+
 @end

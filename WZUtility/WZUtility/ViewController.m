@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "WZRefection.h"
 #import "Person.h"
+#import "NSObject+WZAdd.h"
 
 @interface ViewController ()
 
@@ -37,7 +38,7 @@
 //    [self testMonthSymbols];
 //    [self testQuarterSymbols];
 //    [self testEraSymbols];
-    
+
 }
 
 - (void)test {
